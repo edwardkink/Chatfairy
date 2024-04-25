@@ -136,3 +136,6 @@ def message():
     message = request.json["message"]
     messages.append({"username": username, "message": message})
     return "OK"
+
+if __name__ == '__main__':
+    app.run()
